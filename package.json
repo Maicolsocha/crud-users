@@ -1,0 +1,13 @@
+
+{
+    "name": "user-crud",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "postinstall": "npm --prefix frontend install",
+        "dev": "concurrently -k \"php -S 127.0.0.1:8000 -t backend/public backend/public/index.php\" \"npm --prefix frontend run dev\""
+    },
+    "devDependencies": {
+        "concurrently": "^9.2.1"
+    }
+}
